@@ -51,3 +51,12 @@ a:hover{
 .logo a{
    color: white;
 }
+
+.main{
+    flex: 0.8;
+    width: 100%;    
+}
+
+.routes{
+    padding: 24px;
+}
