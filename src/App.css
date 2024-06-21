@@ -89,6 +89,20 @@ a:hover{
     width: 250px;
 }
 
+.news-card{
+    min-height: 300px !important;
+}
+
+.news-image-container{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.news-title{
+width: 70%;
+}
+
+
 .footer {
     background-color: #001529;
     display: flex;
