@@ -15,7 +15,7 @@ const CryptoDetails = () => {
   const { data, isFetching } = useGetCryptoDetailsQuery(coinId)
 
   if(isFetching) return "Loading..."
-  
+
   const cryptoDetails = data?.data?.coin
   console.log(data)
 
@@ -56,7 +56,7 @@ const CryptoDetails = () => {
       icon: <MoneyCollectOutlined /> 
     },
     { 
-      title: 'Aprroved Supply', 
+      title: 'Approved Supply', 
       value: cryptoDetails.supply.confirmed ? <CheckOutlined /> : <StopOutlined />, 
       icon: <ExclamationCircleOutlined /> 
     },
@@ -103,6 +103,25 @@ const CryptoDetails = () => {
             </p>
           </Col>
           {stats.map(({icon, title, value}) => (
+            <Col className='coin-stats'>
+              <Col className='coin-stats-name'>
+                <Text>{icon}</Text>
+                <Text>{title}</Text>
+              </Col>
+              <Text className='stats'>{value}</Text>
+            </Col>
+          ))}
+        </Col>
+        <Col className='other-stats-info'>
+          <Col className='coin-value-statistics-heading'>
+            <Title level={3} className='coin-details-heading'>
+              Other Statistics
+            </Title>
+            <p>
+              An Overview showing the stats of all cryptocurrencies.
+            </p>
+          </Col>
+          {genericStats.map(({icon, title, value}) => (
             <Col className='coin-stats'>
               <Col className='coin-stats-name'>
                 <Text>{icon}</Text>
