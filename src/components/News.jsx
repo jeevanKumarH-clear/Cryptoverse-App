@@ -1,20 +1,17 @@
 import React from 'react'
-import { Select, Typography, Row, Col, Avatar, Card } from 'antd'
-import moment from 'moment'
+import { Typography, Row, Col, Card } from 'antd'
 import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi'
 
-const { Text, Title } = Typography;
-const { Option } = Select;
+const { Title } = Typography;
 
 const News = ({simplified}) => {
   const { data: cryptoNews } = useGetCryptoNewsQuery();
+  if(!cryptoNews?.data) return "Loading..."
 
   const newsArray = cryptoNews?.data?.map((news) => news).slice(1,7)
 
   const renderNews = simplified ? newsArray : cryptoNews?.data;
-  console.log(cryptoNews)
 
-  if(!cryptoNews?.data) return "Loading..."
 
   return (
     <Row gutter={[24,24]}>
@@ -23,13 +20,19 @@ const News = ({simplified}) => {
           <Card hoverable className='news-card'>
             <a href={news.url} target='_blank' rel='noreferrer'>
               <div className='news-image-container'>
-                <Title className='news-title' level={4}>{news.title}</Title>
+                <Title className='news-title' level={5}>
+                  {news.title.length > 60 
+                      ? `${news.title.substr(0,70)}...` 
+                      : news.title
+                  }
+                </Title>
                 <img style={{maxWidth: '200px', maxHeight:'75px'}} src={news.thumbnail} alt='img'/>
               </div>
-              <p>{news.description > 10
-                    ? `${news.description.substring(0,50)}...`
+              <p>{news.description.length > 200
+                    ? `${news.description.substr(0,150)}...`
                     : news.description
-                  }</p>
+                  }
+              </p>
             </a>
           </Card>
         </Col>
