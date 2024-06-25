@@ -1,11 +1,11 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const cryptoNewsHeaders =  {
-    'x-rapidapi-key': '6b45e7ca4bmsh32a65e508a11984p134512jsnd7006196a46f',
-    'x-rapidapi-host': 'cryptocurrency-news2.p.rapidapi.com'
+  const cryptoNewsHeaders =  {
+    accept : 'application/json',
+    TI_API_KEY: '008af21ca9f84f509e0b81bd8a7cf446'
   }
 
-const baseUrl = 'https://cryptocurrency-news2.p.rapidapi.com';
+const baseUrl = 'https://api.tokeninsight.com';
 
 const createRequest = (url) => ({url, headers: cryptoNewsHeaders});
 
@@ -14,7 +14,7 @@ export const cryptoNewsApi = createApi({
     baseQuery: fetchBaseQuery({ baseUrl }),
     endpoints: (builder) => ({
         getCryptoNews: builder.query({
-            query: (count) => createRequest(`/v1/coindesk/?_limit=${count}`)
+            query: (count) => createRequest(`/api/v1/news/list?_limit=${count}`)
         })
     })
 })
