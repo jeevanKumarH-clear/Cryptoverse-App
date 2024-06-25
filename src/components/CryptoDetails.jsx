@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import HTMLReactParser from 'html-react-parser'
 import { useParams } from 'react-router-dom'
 import millify from 'millify'
 import { Col, Row, Select, Typography } from 'antd'
@@ -134,10 +133,13 @@ const CryptoDetails = () => {
       </Col>
       <Col className='coin-desc-link'>
           <Row className='coin-desc'>
-              <Title level={3} className='coin-details-heading'>
+            {cryptoDetails.description 
+              ? <Title level={3} className='coin-details-heading'>
                 <p>What is {cryptoDetails.name} ?</p>
                   {cryptoDetails.description}
               </Title>
+              : null
+            }
           </Row>
           <Col className='coin-links'>
             <Title level={3} className='coin-details-heading'>
@@ -153,7 +155,6 @@ const CryptoDetails = () => {
                 </a>
               </Row>
             ))}
-
           </Col>
       </Col>
     </Col>
