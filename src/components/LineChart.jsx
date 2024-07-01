@@ -12,7 +12,7 @@ const currency = coinName.toLowerCase()
 const { data: currencyHistory , error, isLoading } = useGetCryptoCoinHistoryQuery({ currency, length : '90'});
 
 if (isLoading) return "Loading...";
-if (error) return `Error: ${error.message}`;
+if (error) return (<Title level={2} className='error-msg'>{coinName} Data Not Available </Title>);
 
 const coinPrice = [];
 const coinTimeStamp = [];

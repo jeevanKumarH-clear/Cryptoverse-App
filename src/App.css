@@ -84,6 +84,10 @@ a:hover{
     width:30px;
 }
 
+.card-key {
+    font-weight: bold;
+}
+
 .search-crypto{
     margin: 20px auto 30px auto;
     width: 250px;
@@ -225,6 +229,14 @@ a:hover{
 
 .chart-title{
     color: #0071bd !important;
+}
+
+.error-msg {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: #0071bd !important;
+    padding: 2%;
 }
 
 .price-container{
