@@ -23,7 +23,7 @@ const Exchanges = () => {
       <Row>
         {exchangesList.map((exchange,i) => (
           <Col span={24}>
-            <Collapse>
+            <Collapse className='collapse'>
               <Panel
                 key={exchange.id}
                 showArrow={false}
@@ -35,7 +35,7 @@ const Exchanges = () => {
                     </Col>
                     <Col span={6}>${millify(exchange.vol_spot_24h)}</Col>
                     <Col span={6}>${millify(exchange.open_interest)}</Col>
-                    <Col span={6}><a href={exchange.website}>{exchange.exchange_name}.com</a></Col>
+                    <Col span={6}><a className='exchange-site' href={exchange.website}>{exchange.exchange_name}.com</a></Col>
                   </Row>
                 )}>
                     <Title level={3}>Other Details</Title>
