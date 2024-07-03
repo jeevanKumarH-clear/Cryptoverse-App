@@ -1,12 +1,13 @@
 import React from "react";
 import { Typography, Row, Col, Card } from "antd";
 import { useGetCryptoNewsQuery } from "../services/cryptoNewsApi";
+import Loader from "./Loader";
 
 const { Title } = Typography;
 
 const News = ({ simplified }) => {
   const { data: cryptoNews } = useGetCryptoNewsQuery();
-  if (!cryptoNews?.data) return "Loading...";
+  if (!cryptoNews?.data) return <Loader/>;
 
   const newsArray = cryptoNews?.data?.items?.map((news) => news).slice(1, 7);
 

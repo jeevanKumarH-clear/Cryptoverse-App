@@ -15,6 +15,7 @@ import {
 } from "@ant-design/icons";
 import { useGetCryptoDetailsQuery } from "../services/cryptoApi";
 import LineChart from "./LineChart";
+import Loader from "./Loader";
 
 const { Title, Text } = Typography;
 
@@ -22,7 +23,7 @@ const CryptoDetails = () => {
   const { coinId } = useParams();
   const { data, isFetching } = useGetCryptoDetailsQuery(coinId);
 
-  if (isFetching) return "Loading...";
+  if (isFetching) return <Loader/>;
 
   const cryptoDetails = data?.data?.coin;
 

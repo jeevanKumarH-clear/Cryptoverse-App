@@ -2,13 +2,14 @@ import React from 'react'
 import millify from 'millify'
 import { Collapse, Row, Col, Typography } from 'antd'
 import { useGetExchangesQuery } from '../services/cryptoCoinHistory';
+import Loader from './Loader';
 
 const { Text, Title } = Typography;
 const { Panel } = Collapse;
 
 const Exchanges = () => {
   const { data, isFetching } = useGetExchangesQuery();
-  if (isFetching) return "Loading..."
+  if (isFetching) return <Loader/>
 
   const exchangesList = data.data.items;
   return (

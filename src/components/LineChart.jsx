@@ -11,6 +11,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import Loader from "./Loader";
 
 Chart.register(
   CategoryScale,
@@ -30,7 +31,7 @@ const LineChart = ({ coinName, currentPrice, priceChange }) => {
     isLoading,
   } = useGetCryptoCoinHistoryQuery({ currency, length: "90" });
 
-  if (isLoading) return "Loading...";
+  if (isLoading) return <Loader/>;
   if (error)
     return (
       <Title level={2} className="error-msg">
