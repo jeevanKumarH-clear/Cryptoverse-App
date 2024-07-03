@@ -265,6 +265,11 @@ a:hover{
     font-weight: 900 !important;
 }
 
+.exchanges-header {
+    font-weight: 500;
+    font-size: 20px;
+}
+
 .footer {
     background-color: #001529;
     display: flex;

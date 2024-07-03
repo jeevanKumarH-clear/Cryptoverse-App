@@ -32,7 +32,10 @@ export const cryptoCoinHistoryApi = createApi({
           vs_currency,
         }),
     }),
+    getExchanges: builder.query({
+      query: () => createRequest(`/api/v1/exchanges/list`)
+    })
   }),
 });
 
-export const { useGetCryptoCoinHistoryQuery } = cryptoCoinHistoryApi;
+export const { useGetCryptoCoinHistoryQuery, useGetExchangesQuery } = cryptoCoinHistoryApi;
