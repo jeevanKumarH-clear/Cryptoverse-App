@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Crypto App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Crypto-App is a modern web application designed to provide real-time cryptocurrency data and visualizations. Built using HTML, CSS, and JavaScript, the app leverages the power of React for a dynamic and responsive user interface. The styling and layout are enhanced using Ant Design (Antd), ensuring a clean and professional look.
 
-## Available Scripts
+# Key Features
 
-In the project directory, you can run:
+=> Real-Time Data: Fetches up-to-date cryptocurrency data from Rapid API, ensuring users have the latest market information.
 
-### `npm start`
+=> State Management: Utilizes Redux Toolkit (RTK) for efficient and predictable state management, making the app easy to maintain and extend.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+=> Interactive Charts: Implements Chart.js to display data visually, allowing users to understand market trends and make informed decisions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+=> User-Friendly Interface: Ant Design components provide a polished and intuitive user experience.
 
-### `npm test`
+# Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Img 6](https://github.com/jeevanKumarH-clear/Cryptoverse-App/assets/111953063/b07388a0-204d-4ec4-8e70-7f9efd4c658c)
 
-### `npm run build`
+![Img 2](https://github.com/jeevanKumarH-clear/Cryptoverse-App/assets/111953063/5783c89b-80e9-4c0b-8725-407ca73d5941)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Img 3](https://github.com/jeevanKumarH-clear/Cryptoverse-App/assets/111953063/c22c6aed-8f9b-446a-b488-d00bcbc58880)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Img 4](https://github.com/jeevanKumarH-clear/Cryptoverse-App/assets/111953063/58e7c921-3489-465e-8fa3-217cbc8895a6)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Img 5](https://github.com/jeevanKumarH-clear/Cryptoverse-App/assets/111953063/b8921800-c3c8-46c0-8ef9-5f05671f941b)
