@@ -2,9 +2,9 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const cryptoCoinHistoryApiHeaders = {
   accept: "application/json",
-  "x-rapidapi-key": "6b45e7ca4bmsh32a65e508a11984p134512jsnd7006196a46f",
+  "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
   "x-rapidapi-host": "tokeninsight-crypto-api1.p.rapidapi.com",
-  TI_API_KEY: "008af21ca9f84f509e0b81bd8a7cf446",
+  TI_API_KEY: process.env.REACT_APP_TI_API_KEY,
 };
 
 const baseUrl = "https://tokeninsight-crypto-api1.p.rapidapi.com";

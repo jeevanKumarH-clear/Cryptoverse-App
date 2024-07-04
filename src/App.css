@@ -271,7 +271,7 @@ a:hover{
 }
 
 .routes{
-    padding: 20px;
+    padding: 30px;
 }
 
 .card-key {
@@ -301,13 +301,14 @@ a:hover{
 
 @media screen and (max-width:1300px){
     .main{
-        margin-left: 50px;
+        /* margin-left: 50px; */
+        margin-left: -1px;
     }
 }
 
 @media screen and (max-width:1170px){
     .main{
-        margin-left: 50px;
+        margin-left: 33px;
     }
 }
 
@@ -320,7 +321,7 @@ a:hover{
 
 @media screen and (max-width:1000px){
     .main{
-        margin-left: 100px;
+        margin-left: 69px;
     }
 
     .stats-container{
